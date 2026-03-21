@@ -3,5 +3,6 @@ brave-bin
 claude-cowork-service
 claude-cowork-service-debug
 claude-desktop-bin
+proton-mail-bin
 yay
 yay-debug
