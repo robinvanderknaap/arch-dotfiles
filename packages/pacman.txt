@@ -22,6 +22,8 @@ openssh
 pipewire
 pipewire-alsa
 pipewire-pulse
+podman
+podman-compose
 qt5-wayland
 qt6-wayland
 rofi
