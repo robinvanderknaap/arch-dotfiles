@@ -2,6 +2,8 @@ base
 base-devel
 code
 dolphin
+dotnet-runtime
+dotnet-sdk
 dunst
 git
 grim
