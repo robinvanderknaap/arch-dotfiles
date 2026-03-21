@@ -1,0 +1,7 @@
+1password
+brave-bin
+claude-cowork-service
+claude-cowork-service-debug
+claude-desktop-bin
+yay
+yay-debug
