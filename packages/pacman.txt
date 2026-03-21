@@ -25,6 +25,7 @@ qt6-wayland
 rofi
 sddm
 slurp
+spotify-launcher
 sudo
 timeshift
 vim
