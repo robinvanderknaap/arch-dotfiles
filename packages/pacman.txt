@@ -1,5 +1,8 @@
 base
 base-devel
+blueman
+bluez
+bluez-utils
 code
 dolphin
 dotnet-runtime
@@ -24,6 +27,7 @@ noto-fonts
 nwg-look
 obsidian
 openssh
+pavucontrol
 pipewire
 pipewire-alsa
 pipewire-pulse

@@ -9,7 +9,7 @@
 
     "modules-left": ["hyprland/workspaces", "hyprland/window"],
     "modules-center": ["clock"],
-    "modules-right": ["pulseaudio", "network", "cpu", "memory", "battery", "tray"],
+    "modules-right": ["bluetooth", "pulseaudio", "network", "cpu", "memory", "battery", "tray"],
 
     "hyprland/workspaces": {
         "format": "{id}",
@@ -38,10 +38,14 @@
     },
 
     "pulseaudio": {
-        "format": "VOL {volume}%",
-        "format-muted": "MUTED",
-        "on-click": "pactl set-sink-mute @DEFAULT_SINK@ toggle"
+    	"format": "󰕾 {volume}%",
+    	"format-muted": "󰝟 Muted",
+    	"format-bluetooth": "󰂱 {volume}%",
+    	"on-click": "pavucontrol",
+    	"on-scroll-up": "pactl set-sink-volume @DEFAULT_SINK@ +5%",
+    	"on-scroll-down": "pactl set-sink-volume @DEFAULT_SINK@ -5%"
     },
+
     "network": {
         "format-wifi": "󰤨 {essid} {signalStrength}%",
     	"format-ethernet": "󰈀 {ipaddr}",
@@ -59,5 +63,14 @@
 
     "tray": {
         "spacing": 8
+    },
+    "bluetooth": {
+    	"format": "󰂯 {status}",
+    	"format-connected": "󰂱 {device_alias}",
+    	"format-connected-battery": "󰂱 {device_alias} {device_battery_percentage}%",
+    	"tooltip-format": "{controller_alias}\n{num_connections} connected",
+    	"tooltip-format-connected": "{controller_alias}\n{num_connections} connected\n\n{device_enumerate}",
+    	"tooltip-format-enumerate-connected": "{device_alias}",
+    	"on-click": "blueman-manager"
     }
 }
