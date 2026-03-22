@@ -5,6 +5,7 @@ claude-cowork-service
 claude-cowork-service-debug
 claude-desktop-bin
 kvantum-theme-catppuccin-git
+onlyoffice-bin
 proton-mail-bin
 qt6ct-kde
 yay
