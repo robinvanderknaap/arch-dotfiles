@@ -32,7 +32,6 @@ fastfetch
 #alias ll='ls -lah'
 #alias la='ls -A'
 alias grep='grep --color=auto'
-alias vim='nvim'             # if you install neovim later
 alias cat='bat --theme=Catppuccin-mocha'              # if you install bat later
 #alias cd='z'                 # use zoxide instead of cd
 
@@ -52,6 +51,8 @@ alias cleanup='sudo pacman -Rns $(pacman -Qtdq)'  # remove orphans
 alias conf='nano ~/.config/hypr/hyprland.conf'
 alias reload='hyprctl reload'
 
+alias p=pnpm
+
 # ── History ───────────────────────────────────────────────
 HISTSIZE=10000
 SAVEHIST=10000
@@ -68,3 +69,8 @@ function y() {
     fi
     rm -f -- "$tmp"
 }
+
+# NVM
+export NVM_DIR="$HOME/.nvm"
+[ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
+[ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
