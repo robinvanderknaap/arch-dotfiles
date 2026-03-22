@@ -4,6 +4,8 @@ catppuccin-gtk-theme-mocha
 claude-cowork-service
 claude-cowork-service-debug
 claude-desktop-bin
+kvantum-theme-catppuccin-git
 proton-mail-bin
+qt6ct-kde
 yay
 yay-debug
