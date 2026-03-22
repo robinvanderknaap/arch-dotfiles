@@ -1,0 +1,61 @@
+# Overall format — what shows on each line
+format = """
+[░▒▓](fg:#cba6f7)\
+[ $os $username ](bg:#cba6f7 fg:#1e1e2e)\
+[](fg:#cba6f7 bg:#89b4fa)\
+[ $directory ](bg:#89b4fa fg:#1e1e2e)\
+[](fg:#89b4fa bg:#313244)\
+$git_branch\
+$git_status\
+[](fg:#313244)\
+$fill\
+$cmd_duration\
+[ $time ](bg:#313244 fg:#cdd6f4)\
+[▓▒░](fg:#313244)\
+\n$character"""
+
+[os]
+disabled = false
+style = "bg:#cba6f7 fg:#1e1e2e"
+
+[os.symbols]
+Arch = ""
+
+[username]
+show_always = true
+style_user = "bg:#cba6f7 fg:#1e1e2e"
+style_root = "bg:#f38ba8 fg:#1e1e2e"
+format = "[$user]($style)"
+
+[directory]
+style = "bg:#89b4fa fg:#1e1e2e"
+format = "[ $path ]($style)"
+truncation_length = 3
+truncate_to_repo = false
+
+[git_branch]
+symbol = ""
+style = "bg:#313244 fg:#cba6f7"
+format = "[ $symbol $branch ]($style)"
+
+[git_status]
+style = "bg:#313244 fg:#f38ba8"
+format = "[$all_status$ahead_behind ]($style)"
+
+[cmd_duration]
+style = "bg:#313244 fg:#f9e2af"
+format = "[ 󱦟 $duration ]($style)"
+min_time = 2_000    # only show if command took over 2 seconds
+
+[time]
+disabled = false
+style = "bg:#313244 fg:#cdd6f4"
+format = "[ $time ]($style)"
+time_format = "%H:%M"
+
+[fill]
+symbol = " "
+
+[character]
+success_symbol = "[❯](fg:#a6e3a1)"
+error_symbol   = "[❯](fg:#f38ba8)"
