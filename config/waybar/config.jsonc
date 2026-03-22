@@ -42,13 +42,15 @@
         "format-muted": "MUTED",
         "on-click": "pactl set-sink-mute @DEFAULT_SINK@ toggle"
     },
-
     "network": {
-        "format-wifi": "WiFi {signalStrength}%",
-        "format-ethernet": "ETH",
-        "format-disconnected": "No Network"
+        "format-wifi": "󰤨 {essid} {signalStrength}%",
+    	"format-ethernet": "󰈀 {ipaddr}",
+    	"format-disconnected": "󰤭 Disconnected",
+    	"format-linked": "󰈀 {ifname} (No IP)",
+    	"tooltip-format-wifi": "󰤨 {essid}\nSignal: {signalStrength}%\nFrequency: {frequency}GHz\nUp: {bandwidthUpBits} Down: {bandwidthDownBits}",
+    	"tooltip-format-ethernet": "󰈀 {ifname}\nIP: {ipaddr}\nUp: {bandwidthUpBits} Down: {bandwidthDownBits}",
+    	"on-click": "nm-connection-editor"
     },
-
     "battery": {
         "format": "BAT {capacity}%",
         "format-charging": "CHR {capacity}%",
