@@ -17,6 +17,7 @@ linux-firmware
 linux-headers
 networkmanager
 noto-fonts
+nwg-look
 obsidian
 openssh
 pipewire

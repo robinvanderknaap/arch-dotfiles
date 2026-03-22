@@ -1,5 +1,6 @@
 1password
 brave-bin
+catppuccin-gtk-theme-mocha
 claude-cowork-service
 claude-cowork-service-debug
 claude-desktop-bin
