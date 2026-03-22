@@ -5,9 +5,11 @@ dolphin
 dotnet-runtime
 dotnet-sdk
 dunst
+fastfetch
 git
 grim
 hyprland
+hyprlock
 hyprpaper
 hyprpolkitagent
 kitty
