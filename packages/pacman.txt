@@ -11,6 +11,7 @@ dotnet-runtime
 dotnet-sdk
 dunst
 eza
+fastfetch
 git
 grim
 hyprland
