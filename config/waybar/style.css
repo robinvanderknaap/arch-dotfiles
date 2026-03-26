@@ -9,7 +9,7 @@
 window#waybar {
     background-color: rgba(30, 30, 46, 0.9);  /* Catppuccin Mocha base */
     color: #cdd6f4;
-    border-radius: 10px;
+    border-radius: 0px;
 }
 
 #workspaces button {
