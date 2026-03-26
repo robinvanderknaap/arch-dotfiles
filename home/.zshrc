@@ -25,7 +25,7 @@ eval "$(starship init zsh)"
 #eval "$(zoxide init zsh)"
 
 # ── Fastfetch on start ────────────────────────────────────
-fastfetch
+# fastfetch
 
 # ── Aliases ───────────────────────────────────────────────
 #alias ls='ls --color=auto'
