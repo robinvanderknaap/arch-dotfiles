@@ -4,6 +4,8 @@ catppuccin-gtk-theme-mocha
 claude-cowork-service
 claude-cowork-service-debug
 claude-desktop-bin
+datagrip
+datagrip-jre
 kvantum-theme-catppuccin-git
 onlyoffice-bin
 proton-mail-bin
