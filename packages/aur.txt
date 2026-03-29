@@ -11,5 +11,6 @@ nextcloud-client-git
 onlyoffice-bin
 proton-mail-bin
 qt6ct-kde
+sddm-silent-theme
 yay
 yay-debug
