@@ -13,6 +13,7 @@ dunst
 eza
 fastfetch
 git
+gnome-keyring
 grim
 hyprland
 hyprlock

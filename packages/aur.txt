@@ -7,6 +7,7 @@ claude-desktop-bin
 datagrip
 datagrip-jre
 kvantum-theme-catppuccin-git
+libgnome-keyring
 nextcloud-client-git
 onlyoffice-bin
 proton-mail-bin
