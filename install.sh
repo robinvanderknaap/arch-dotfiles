@@ -17,26 +17,26 @@ echo "[1/6] Updating system..."
 sudo pacman -Syu --noconfirm
 
 # ── 2. Install yay ────────────────────────────
-# echo "[2/6] Installing yay (AUR helper)..."
-# if ! command -v yay &>/dev/null; then
-#     sudo pacman -S --needed --noconfirm git base-devel
-#     git clone https://aur.archlinux.org/yay.git /tmp/yay
-#     cd /tmp/yay && makepkg -si --noconfirm
-#     cd "$DOTFILES"
-# else
-#     echo "  yay already installed, skipping."
-# fi
+echo "[2/6] Installing yay (AUR helper)..."
+if ! command -v yay &>/dev/null; then
+    sudo pacman -S --needed --noconfirm git base-devel
+    git clone https://aur.archlinux.org/yay.git /tmp/yay
+    cd /tmp/yay && makepkg -si --noconfirm
+    cd "$DOTFILES"
+else
+    echo "  yay already installed, skipping."
+fi
 
-# # ── 3. Install packages ───────────────────────
-# echo "[3/6] Installing packages from pacman.txt..."
-# sudo pacman -S --needed --noconfirm - < "$DOTFILES/packages/pacman.txt"
+# ── 3. Install packages ───────────────────────
+echo "[3/6] Installing packages from pacman.txt..."
+sudo pacman -S --needed --noconfirm - < "$DOTFILES/packages/pacman.txt"
 
-# echo "[3/6] Installing AUR packages from aur.txt..."
-# yay -S --needed --noconfirm - < "$DOTFILES/packages/aur.txt"
+echo "[3/6] Installing AUR packages from aur.txt..."
+yay -S --needed --noconfirm - < "$DOTFILES/packages/aur.txt"
 
 # # ── 4. Copy config files ──────────────────────
-# echo "[4/6] Copying config files..."
-# mkdir -p ~/.config
+echo "[4/6] Copying config files..."
+mkdir -p ~/.config
 
 # for dir in "$DOTFILES"/config/*/; do
 #     name=$(basename "$dir")
