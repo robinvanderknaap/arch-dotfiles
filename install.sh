@@ -111,6 +111,13 @@ mkdir -p ~/.config
 # echo "Installing Claude..."
 # curl -fsSL https://claude.ai/install.sh | bash
 
+# Install wallpapers
+rm -rf /tmp/wallpapers-catppuccin-mocha
+git clone --depth 1 git@github.com:robinvanderknaap/walls-catppuccin-mocha.git /tmp/wallpapers-catppuccin-mocha
+mkdir -p ~/.config/wallpapers
+rsync -a --include='*.png' --include='*.jpg' --exclude='*' /tmp/wallpapers-catppuccin-mocha/ ~/.config/wallpapers/
+rm -rf /tmp/wallpapers-catppuccin-mocha
+
 echo ""
 echo "──────────────────────────────────"
 echo " Done! Please reboot."
