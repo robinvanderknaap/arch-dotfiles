@@ -15,6 +15,7 @@ fastfetch
 git
 gnome-keyring
 grim
+hypridle
 hyprland
 hyprlock
 hyprpaper
