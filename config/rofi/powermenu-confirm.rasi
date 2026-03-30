@@ -1,0 +1,78 @@
+* {
+    font:               "JetBrainsMono Nerd Font 13";
+    base:               #1e1e2e;
+    surface0:           #313244;
+    surface1:           #45475a;
+    text:               #cdd6f4;
+    subtext1:           #bac2de;
+    mauve:              #cba6f7;
+    red:                #f38ba8;
+    green:              #a6e3a1;
+    background-color:   transparent;
+    text-color:         @text;
+}
+
+window {
+    background-color:   @base;
+    border:             2px solid;
+    border-color:       @red;
+    border-radius:      14px;
+    width:              280px;
+    height:             130px;
+    location:           center;
+    anchor:             center;
+    padding:            0px;
+}
+
+mainbox {
+    background-color:   transparent;
+    children:           [ message, listview ];
+    spacing:            12px;
+    padding:            20px;
+}
+
+message {
+    background-color:   transparent;
+    padding:            0px;
+}
+
+textbox {
+    background-color:   transparent;
+    text-color:         @subtext1;
+    font:               "JetBrainsMono Nerd Font 11";
+    horizontal-align:   0.5;
+}
+
+listview {
+    background-color:   transparent;
+    columns:            2;
+    lines:              1;
+    fixed-columns:      true;
+    scrollbar:          false;
+    spacing:            8px;
+}
+
+element {
+    background-color:   @surface0;
+    border-radius:      8px;
+    padding:            10px;
+    cursor:             pointer;
+}
+
+element normal {
+    background-color:   @surface0;
+    text-color:         @subtext1;
+}
+
+element selected.normal {
+    background-color:   @surface1;
+    text-color:         @mauve;
+    border:             2px solid;
+    border-color:       @mauve;
+}
+
+element-text {
+    background-color:   transparent;
+    text-color:         inherit;
+    horizontal-align:   0.5;
+}

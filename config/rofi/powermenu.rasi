@@ -1,0 +1,76 @@
+/* ── Catppuccin Mocha Power Menu (Rofi 2.x compatible) ─── */
+
+configuration {
+    show-icons:         false;
+    font:               "JetBrainsMono Nerd Font 13";
+}
+
+* {
+    base:               #1e1e2e;
+    surface0:           #313244;
+    surface1:           #45475a;
+    overlay0:           #6c7086;
+    text:               #cdd6f4;
+    subtext1:           #bac2de;
+    mauve:              #cba6f7;
+    background-color:   transparent;
+    text-color:         @text;
+}
+
+window {
+    background-color:   @base;
+    border:             2px solid;
+    border-color:       @mauve;
+    border-radius:      16px;
+    location:           center;
+    anchor:             center;
+    padding:            24px;
+    width: 		660px;
+}
+
+mainbox {
+    background-color:   transparent;
+    children:           [ listview ];
+    spacing:            0px;
+    padding: 		0px;
+}
+
+listview {
+    background-color:   transparent;
+    columns:            5;
+    lines:              1;
+    fixed-columns:      true;
+    scrollbar:          false;
+    spacing:            16px;
+}
+
+element {
+    background-color:   @surface0;
+    border-radius:      12px;
+    padding:            24px 4px 24px 4px;
+    cursor:             pointer;
+    orientation:        vertical;
+    spacing:            6px;
+    expand:             true;
+}
+
+element normal.normal {
+    background-color:   @surface0;
+    text-color:         @subtext1;
+}
+
+element selected.normal {
+    background-color:   @surface1;
+    text-color:         @mauve;
+    border:             2px solid;
+    border-color:       @mauve;
+}
+
+element-text {
+    background-color:   transparent;
+    text-color:         inherit;
+    horizontal-align:   0.5;
+    vertical-align:     0.5;
+    expand:             true;
+    padding: 10px;
+}

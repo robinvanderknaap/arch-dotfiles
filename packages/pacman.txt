@@ -47,6 +47,7 @@ spotify-launcher
 starship
 sudo
 timeshift
+ttf-jetbrains-mono-nerd
 vim
 vulkan-radeon
 waybar
