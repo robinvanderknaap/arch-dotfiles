@@ -21,6 +21,7 @@ hyprlock
 hyprpaper
 hyprpolkitagent
 kitty
+kubectl
 kvantum
 libnotify
 linux
@@ -42,6 +43,7 @@ qt5-wayland
 qt6-wayland
 rofi
 sddm
+signal-desktop
 slurp
 spotify-launcher
 starship
@@ -55,4 +57,5 @@ wireplumber
 wl-clipboard
 xdg-desktop-portal-hyprland
 yazi
+zed
 zsh

@@ -78,3 +78,6 @@ export PATH="$HOME/.local/bin:$PATH"
 
 # Editor, default for yazi
 export EDITOR="/usr/bin/vim"
+
+# Kubectl
+alias k=kubectl

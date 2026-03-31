@@ -6,6 +6,7 @@ datagrip
 datagrip-jre
 kvantum-theme-catppuccin-git
 libgnome-keyring
+nchat
 nextcloud-client-git
 onlyoffice-bin
 proton-mail-bin
