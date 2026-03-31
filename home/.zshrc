@@ -48,10 +48,14 @@ alias search='pacman -Ss'
 alias cleanup='sudo pacman -Rns $(pacman -Qtdq)'  # remove orphans
 
 # Hyprland
-alias conf='nano ~/.config/hypr/hyprland.conf'
+alias conf='vim ~/.config/hypr/hyprland.conf'
 alias reload='hyprctl reload'
 
+# Pnpm
 alias p=pnpm
+
+# Kubectl
+alias k=kubectl
 
 # ── History ───────────────────────────────────────────────
 HISTSIZE=10000
@@ -79,5 +83,3 @@ export PATH="$HOME/.local/bin:$PATH"
 # Editor, default for yazi
 export EDITOR="/usr/bin/vim"
 
-# Kubectl
-alias k=kubectl
