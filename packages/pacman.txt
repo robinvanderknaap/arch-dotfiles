@@ -6,6 +6,7 @@ blueman
 bluez
 bluez-utils
 code
+cups
 dolphin
 dotnet-runtime
 dotnet-sdk
@@ -25,6 +26,8 @@ kitty
 kubectl
 kvantum
 libnotify
+libreoffice-fresh
+libreoffice-fresh-nl
 linux
 linux-firmware
 linux-headers
@@ -50,6 +53,7 @@ slurp
 spotify-launcher
 starship
 sudo
+system-config-printer
 timeshift
 ttf-jetbrains-mono-nerd
 vim
@@ -59,5 +63,6 @@ wireplumber
 wl-clipboard
 xdg-desktop-portal-hyprland
 yazi
+zathura
 zed
 zsh
