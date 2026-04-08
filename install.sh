@@ -118,6 +118,9 @@ mkdir -p ~/.config/wallpapers
 rsync -a --include='*.png' --include='*.jpg' --exclude='*' /tmp/wallpapers-catppuccin-mocha/ ~/.config/wallpapers/
 rm -rf /tmp/wallpapers-catppuccin-mocha
 
+# Refresh fonts
+fc-cache -fv
+
 echo ""
 echo "──────────────────────────────────"
 echo " Done! Please reboot."
