@@ -8,8 +8,10 @@ kvantum-theme-catppuccin-git
 libgnome-keyring
 nchat
 nextcloud-client-git
+onlyoffice-bin
 proton-mail-bin
 qt6ct-kde
 sddm-silent-theme
+visual-studio-code-bin
 yay
 yay-debug

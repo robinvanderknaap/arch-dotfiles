@@ -5,7 +5,6 @@ bat
 blueman
 bluez
 bluez-utils
-code
 cups
 dolphin
 dotnet-runtime
@@ -14,6 +13,7 @@ dunst
 eza
 fastfetch
 flatpak
+fzf
 git
 gnome-keyring
 grim
@@ -26,14 +26,13 @@ kitty
 kubectl
 kvantum
 libnotify
-libreoffice-fresh
-libreoffice-fresh-nl
 linux
 linux-firmware
 linux-headers
 network-manager-applet
 networkmanager
 noto-fonts
+nss-mdns
 nwg-look
 obsidian
 openssh
@@ -43,6 +42,7 @@ pipewire-alsa
 pipewire-pulse
 podman
 podman-compose
+python-hid
 qt5-wayland
 qt6-wayland
 resvg
@@ -54,12 +54,14 @@ spotify-launcher
 starship
 sudo
 system-config-printer
+tcpdump
 timeshift
 ttf-jetbrains-mono-nerd
 vim
 vulkan-radeon
 waybar
 wireplumber
+wireshark-qt
 wl-clipboard
 xdg-desktop-portal-hyprland
 yazi
